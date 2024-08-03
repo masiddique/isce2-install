@@ -28,9 +28,12 @@ git clone https://github.com/isce-framework/isce2.git
 cd isce2
 ```
 
-# make a subfolder for the build
-`ln -sf `python3 -c 'import site; print(site.getsitepackages()[0])'` $CONDA_PREFIX/packages`
+Now make a subfolder for the build
+```mkdir build
+cd build
+```
 
+`ln -sf `python3 -c 'import site; print(site.getsitepackages()[0])'` $CONDA_PREFIX/packages`
 Here, `python3 -c 'import site; print(site.getsitepackages()[0])` is simply going to return the complete path where Python is installed in the current conda environment. In my case, it is `/home/adnan/miniconda3/envs/isce/lib/python3.11/site-packages`.
 
 
