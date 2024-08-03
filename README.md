@@ -29,7 +29,8 @@ cd isce2
 ```
 
 Now make a subfolder for the build
-```mkdir build
+```
+mkdir build
 cd build
 ```
 
