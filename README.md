@@ -42,13 +42,21 @@ ln -sf `python3 -c 'import site; print(site.getsitepackages()[0])'` $CONDA_PREFI
 ```
 Here, `python3 -c 'import site; print(site.getsitepackages()[0])` is simply going to return the complete path where Python is installed in the current conda environment. In my case, it is `/home/adnan/miniconda3/envs/isce/lib/python3.11/site-packages`.
 
+### Step 4
+Configure Cmake and install
+
 ```
 # run cmake config
 cmake .. -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX \
   -DCMAKE_CUDA_ARCHITECTURES=native \
   -DCMAKE_PREFIX_PATH=${CONDA_PREFIX} \
   -DCMAKE_BUILD_TYPE=Release 
+```
+Carefully observe the screen dump. There are likely to be several warnings. If there are any missing libraries, try to troubleshoot. If there is no critical error, proceed with build and install as follows:
+
+```
 # compile and install 
 make -j && make install
 ```
+
 
