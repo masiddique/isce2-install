@@ -10,8 +10,8 @@
 ### Step 1
 Open the shell on your machine. If you don't have conda installed on your machine, please do it first. Next, create a new conda environment, and install Python 3.9 in it.
 
-`conda create --name isce python=3.9`
-`conda activate isce`
+`conda create --name isce python=3.11
+conda activate isce`
 
 ### Step 2
 Install packages listed in the `requirement.txt` file.
