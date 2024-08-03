@@ -12,7 +12,7 @@ Open the shell on your machine. If you don't have conda installed on your machin
 
 ```
 conda create --name isce python=3.11
-conda activate isce`
+conda activate isce
 ```
 
 ### Step 2
