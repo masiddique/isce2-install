@@ -23,7 +23,18 @@ Install packages listed in the `requirement.txt` file.
 ### Step 3
 Check out the latest ISCE2 from its GitHub repository. The code will be checked out at the current directory.
 
-` git clone https://github.com/isce-framework/isce2.git`
+```
+git clone https://github.com/isce-framework/isce2.git
+cd isce2
+```
 
+# make a subfolder for the build
+`ln -sf `python3 -c 'import site; print(site.getsitepackages()[0])'` $CONDA_PREFIX/packages`
+
+Here, `python3 -c 'import site; print(site.getsitepackages()[0])` is simply going to return the complete path where Python is installed in the current conda environment. In my case, it is `/home/adnan/miniconda3/envs/isce/lib/python3.11/site-packages`.
+
+
+# use a symbolic link instead of specify -DPYTHON_MODULE_DIR=lib/python3.xx/site-packages
+ln -sf `python3 -c 'import site; print(site.getsitepackages()[0])'` $CONDA_PREFIX/packages  
 
 
