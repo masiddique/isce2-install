@@ -68,9 +68,7 @@ sudo apt-get update
 sudo apt-get install libxt-dev
 ```
 
-Then I also installed Motif: `sudo apt install libmotif-dev`, and configured Cmake again.
-
-Next, I proceeded as follows:
+Then I also installed Motif: `sudo apt install libmotif-dev`, and configured Cmake again. There were still several warnings, related mostly to the library `[libgomp.so.1]` which is a critical library for programs using OpenMP for parallel processing. I probably I'll need to fix this issue, but for now I proceeded as follows:
 
 ```
 # compile and install 
