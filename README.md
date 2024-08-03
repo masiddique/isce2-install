@@ -58,10 +58,19 @@ Carefully observe the screen dump. There are likely to be several warnings. If t
 -- Could NOT find Motif (missing: MOTIF_LIBRARIES MOTIF_INCLUDE_DIR) 
 -- Could NOT find X11 (missing: Xt) 
 ```
-I was surprised to note they are missing, though I had explicitly added them in the `requirements.txt` file.
 
+I check if my system had `Xt` installed:
 
-If there is no critical error, proceed with build and install as follows:
+`dpkg -l | grep libxt` showed me the relevant files, but `dpkg -l | grep libxt-dev` showed nothing. So I did the following next.
+
+```
+sudo apt-get update
+sudo apt-get install libxt-dev
+```
+
+Then I also installed Motif: `sudo apt install libmotif-dev`, and configured Cmake again.
+
+Next, I proceeded as follows:
 
 ```
 # compile and install 
