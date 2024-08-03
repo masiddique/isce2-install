@@ -8,7 +8,7 @@
 - Graphics: NVIDIA GeForce RTX™ 3090
 
 ### Step 1
-Create a new conda environment, and install Python 3.9 in it.
+Open the shell on your machine. If you don't have conda installed on your machine, please do it first. Next, create a new conda environment, and install Python 3.9 in it.
 
 `conda create --name isce python=3.9`
 `conda activate isce`
@@ -16,5 +16,12 @@ Create a new conda environment, and install Python 3.9 in it.
 ### Step 2
 Install packages listed in the `requirement.txt` file.
 
-`conda install -c conda-forge --yes --file requirements.txt`
+`conda install -c conda-forge --file requirements.txt`
+
+### Step 3
+Check out the latest ISCE2 from its GitHub repository. The code will be checked out at the current directory.
+
+` git clone https://github.com/isce-framework/isce2.git`
+
+
 
