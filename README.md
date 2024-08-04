@@ -9,7 +9,7 @@ Inspiration: [https://github.com/lijun99/isce2-install] (Lijun Zhu)
 - Processor: AMD Ryzen™ 9 5950X × 32
 - Graphics: NVIDIA GeForce RTX™ 3090
 
-### Step 1
+### Step 0 [Optional]
 Open the shell on your machine, and switch to your work directory. I recommend that you setup a folder, say "ISCE". The ISCE2 framework that you'll install is available here: https://github.com/isce-framework/isce2. Let's say you want to install the latest release. I recommend [optionally]:
 
 ```
@@ -18,6 +18,7 @@ mkdir v2_6_3 # folder named according to the release, assuming the latest is 2.6
 cd v2_6_3
 ```
 
+### Step 1
 If you don't have conda installed on your machine, please do it first. Next, create a new conda environment, and install Python 3.9 in it.
 
 ```
