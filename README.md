@@ -61,4 +61,25 @@ Carefully observe the screen dump. There are likely to be several warnings. If t
 make -j && make install
 ```
 
+### Step 5
+Check if the installation is correct:
+
+```
+python3 -c 'import isce'
+```
+This should print something like `Using default ISCE Path: /home/adnan/miniconda3/envs/isce/lib/python3.11/site-packages/isce`.
+
+```
+topsApp.py --help --steps
+```
+It should print details:
+
+```
+2024-08-04 11:37:09,034 - isce.insar - INFO - ISCE VERSION = 2.6.3, RELEASE_SVN_REVISION = ,RELEASE_DATE = 20230418, CURRENT_SVN_REVISION = 
+ISCE VERSION = 2.6.3, RELEASE_SVN_REVISION = ,RELEASE_DATE = 20230418, CURRENT_SVN_REVISION = 
+None
+The currently supported sensors are:  ['SENTINEL1']
+
+...
+```
 
