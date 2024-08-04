@@ -54,28 +54,11 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX \
   -DCMAKE_PREFIX_PATH=${CONDA_PREFIX} \
   -DCMAKE_BUILD_TYPE=Release 
 ```
-Carefully observe the screen dump. There are likely to be several warnings. If there are any missing libraries, try to troubleshoot. In my case, I noticed the following:
-
-```
--- Could NOT find Motif (missing: MOTIF_LIBRARIES MOTIF_INCLUDE_DIR) 
--- Could NOT find X11 (missing: Xt) 
-```
-
-I checked if my system had `Xt` installed:
-
-`dpkg -l | grep libxt` showed me the relevant files, but `dpkg -l | grep libxt-dev` showed nothing. So I did the following next.
-
-```
-sudo apt-get update
-sudo apt-get install libxt-dev
-```
-Then I also installed Motif: `sudo apt install libmotif-dev`, and configured Cmake again. 
-
-There were still several warnings, related mostly to the library `[libgomp.so.1]` which is a critical library for programs using OpenMP for parallel processing. I probably I'll need to fix this issue, but for now I proceeded as follows:
+Carefully observe the screen dump. There are likely to be several warnings. If there are any missing libraries, try to troubleshoot. If there is no critical error, proceeded as follows:
 
 ```
 # compile and install 
 make -j && make install
 ```
-Now I noticed that 
+
 
