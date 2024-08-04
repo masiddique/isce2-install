@@ -20,7 +20,9 @@ conda activate isce
 ### Step 2
 Install packages listed in the `requirement.txt` file.
 
-`conda install -c conda-forge --file requirements.txt`
+```
+conda install -c conda-forge --file requirements.txt
+```
 
 ### Step 3
 Check out the latest ISCE2 from its GitHub repository. The code will be checked out at the current directory.
