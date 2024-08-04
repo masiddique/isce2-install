@@ -92,3 +92,5 @@ The currently supported sensors are:  ['SENTINEL1']
 ...
 ```
 
+Things should work now!
+
