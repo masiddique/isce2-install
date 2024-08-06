@@ -1,5 +1,5 @@
 # Building & Installing ISCE2 on a linux machine using CMake
-> Trying to simplify the installation of the ISCE2 framework primarily for myself
+> Trying to simplify the installation of the ISCE2 framework (primarily for myself)
 
 Inspiration: [https://github.com/lijun99/isce2-install] (Lijun Zhu)
 
