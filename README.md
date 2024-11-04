@@ -69,6 +69,7 @@ Carefully observe the screen dump. There are likely to be several warnings. If t
 CMake Error at CMakeLists.txt:3 (project)
   No CMAKE_Fortran_COMPILER could be found.
 ```
+In such a case, install the requisite compiler, and start again with step 4.
 
 If there is no critical error, proceeded as follows:
 
