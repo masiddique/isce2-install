@@ -63,7 +63,14 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX \
   -DCMAKE_PREFIX_PATH=${CONDA_PREFIX} \
   -DCMAKE_BUILD_TYPE=Release 
 ```
-Carefully observe the screen dump. There are likely to be several warnings. If there are any missing libraries, try to troubleshoot. If there is no critical error, proceeded as follows:
+Carefully observe the screen dump. There are likely to be several warnings. If there are any missing libraries, try to troubleshoot. For example, if you're lacking a Fortran compiler, you may see this error:
+
+```
+CMake Error at CMakeLists.txt:3 (project)
+  No CMAKE_Fortran_COMPILER could be found.
+```
+
+If there is no critical error, proceeded as follows:
 
 ```
 # compile and install 
