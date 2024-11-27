@@ -17,6 +17,12 @@ mkdir ISCE && cd ISCE
 mkdir v2_6_3 # folder named according to the release, assuming the latest is 2.6.3
 cd v2_6_3
 ```
+If you intend to use `mdx` visualization tool, please install beforehand the required Open Motif, as follows:
+
+```
+sudo apt update
+sudo apt install libmotif-dev
+```
 
 ### Step 1
 If you don't have conda installed on your machine, please do it first. Next, create a new conda environment, and install Python 3.9 in it.
