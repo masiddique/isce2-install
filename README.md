@@ -109,5 +109,5 @@ The currently supported sensors are:  ['SENTINEL1']
 Things should work now!
 
 ## Recommendations
-If you're interested in using MintPy with ISCE2, it is (recommended)[https://groups.google.com/g/mintpy/c/GNVrSEZLo00/m/re5wpEziAAAJ] that you install both in the same conda environment.
+If you're interested in using MintPy with ISCE2, it is [recommended](https://groups.google.com/g/mintpy/c/GNVrSEZLo00/m/re5wpEziAAAJ) that you install both in the same conda environment.
 
