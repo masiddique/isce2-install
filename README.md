@@ -33,7 +33,7 @@ conda activate isce
 ```
 
 ### Step 2
-Install packages listed in the `requirement.txt` file.
+Install packages listed in the `requirement.txt` file (provided in this repository).
 
 ```
 conda install -c conda-forge --file requirements.txt
