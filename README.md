@@ -25,7 +25,7 @@ sudo apt install libmotif-dev
 ```
 
 ### Step 1
-If you don't have conda installed on your machine, please do it first. Next, create a new conda environment, and install Python 3.9 in it.
+If you don't have conda installed on your machine, please do it first. Next, create a new conda environment, and install Python in it.
 
 ```
 conda create --name isce python=3.11
