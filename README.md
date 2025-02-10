@@ -78,6 +78,8 @@ CMake Error at CMakeLists.txt:3 (project)
 ```
 In such a case, install the requisite compiler, and start again with step 4.
 
+`sudo apt-get install gfortran`
+
 If there is no critical error, proceeded as follows:
 
 ```
