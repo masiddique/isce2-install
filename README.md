@@ -61,6 +61,7 @@ Here, `python3 -c 'import site; print(site.getsitepackages()[0])` is simply goin
 
 ### Step 4
 Configure Cmake and install
+Note: You may need to update your cmake: `sudo apt install cmake`.
 
 ```
 # run cmake config
